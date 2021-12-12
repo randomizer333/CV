@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="css">
     <style>
         * {
-            background-color: #333333;
+            background-color: rgb(20, 41, 41);
+            color: rgb(16, 165, 16);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #programming_skils{
+            float:right;
+            text-align:right;
         }
     </style>
     <title>
@@ -23,15 +29,16 @@
             <h1>Marko Šmid</h1>
             <h2>Curriculum vitae</h2>
         </div>
-        <div id="personal_data">
-
-        </div>
         <div id="programming_skils">
             <label for="file">JavaScript</label>
-            <progress id="file" value="32" max="100"> 55    % </progress>
-        </div>
-        <div id="languages">
-
+            <progress id="file" value="55" max="100"> 55 % </progress>
+            </br>
+            <label for="file">HTML</label>
+            <progress id="file" value="32" max="100"> 55 % </progress>
+            </br>
+            <label for="file">CSS</label>
+            <progress id="file" value="32" max="100"> 55 % </progress>
+            </br>
         </div>
         <div id="experience">
 
@@ -41,9 +48,14 @@
         </div>
     </header>
     <main>
-        <article>
-            <div id="log"></div>
-        </article>
+        <div id="left_column">
+            <article id="personal_data">
+
+            </article>
+            <article id="languages">
+
+            </article>
+        </div>
     </main>
 </body>
 <script>
