@@ -4,47 +4,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/jpg"
-        href="https://cdn.iconscout.com/icon/premium/png-256-thumb/cv-3-196196.png" />
+    <link rel="shortcut icon" type="image/jpg" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/cv-3-196196.png" />
     <style>
         * {
-            background-color: rgb(20, 41, 41);
-            color: rgb(16, 165, 16);
+            /*border: 1px dotted red;*/
+            /*background-color: rgb(20, 41, 41);*/
             font-family: "Courier New", Courier, monospace;
-        }
-
-        body {
-            border: 2px solid yellow;
-            margin: -5px;
-            padding: 5px;
-            /*width: 29.7cm;
-            height: 21.0cm;*/
-        }
-
-        header {
-            text-align: center;
-            border: 2px solid deeppink;
-        }
-
-        div {
-            border: 2px solid deeppink;
-        }
-
-        article {
-            padding: 6px;
-            border: 2px solid deeppink;
+            color: rgb(16, 165, 16);
             size: auto;
         }
-
+        
+        body {
+            font-size: 1.05em;
+            margin: -5px;
+            padding: 5px;
+            background-color: rgb(20, 41, 41);
+            color: greenyellow;
+            /*width: 29.7cm;
+            height: 21.0cm;*/
+            overflow-x: hidden;
+        }
+        
+        header {
+            text-align: center;
+        }
+        
+        div {
+            border: 2px solid darkblue;
+        }
+        
+        article {
+            float: left;
+            padding: 8px;
+            margin: 8px;
+            border: 2px solid lightblue;
+            size: auto;
+            max-width: 400px;
+        }
+        
+        a {
+            border: 1px solid gray;
+            border-radius: 2px;
+            background-color: grey;
+            color: black;
+            margin: 1px;
+        }
+        
+        a:hover {
+            color: white;
+        }
+        
         #programming_skils {
             float: left;
             text-align: right;
         }
-
+        
         #left {
             float: left;
         }
-
+        
         #right {
             float: right;
             text-align: right;
@@ -61,102 +79,123 @@
         <h2>Résumé</h2>
     </header>
     <main>
-        <div id="left">
-            <article id="personal_details">
-                <h2>Personal details</h2>
-                <list>
-                    <li>
-                        Email: maroksmid333@gmail.com
-                    </li>
-                    <li>
-                        LinkedIn: https://si.linkedin.com/in/markosmid
-                    </li>
-                    <li>
-                        Github: http://github.com/randomizer333
-                    </li>
-                </list>
-            </article>
-            <article id="profile">
-                <h2>Profile</h2>
-                <p>
-                    Enthusiastic programmer, a tech head, a self-taught full stack web developer wishing to become a professional some day. Based on my experience I can learn a new concept or programming language. In my spare time I like to explore areas such as: quantum physics, informational theory, astronomy, etc.  My workflow is all about optimizing efficiency achieved with the use of the best tools mankind has produced such as: LEAN, GANTT, Waterfall, Kanban, Git ,etc.
-                </p>
-            </article>
-            <article id="programming_skils">
-                <h2>Programming skills</h2>
-                <label>JavaScript</label>
-                <progress value="77" max="100"></progress>
-                </br>
-                <label>Node.js</label>
-                <progress value="55" max="100"></progress>
-                </br>
-                <label>Git</label>
-                <progress value="55" max="100"></progress>
-                </br>
-                <label>SQL</label>
-                <progress value="77" max="100"></progress>
-                </br>
-                <label>Linux</label>
-                <progress value="66" max="100"></progress>
-                </br>
-                <label>HTML</label>
-                <progress value="44" max="100"></progress>
-                </br>
-                <label>CSS</label>
-                <progress value="33" max="100"></progress>
-                </br>
-                <label>C#</label>
-                <progress value="22" max="100"></progress>
-                </br>
-            </article>
-            <article id="experience">
-                <h2>
-                    Experience
-                </h2>
-                <list>
-                    <li>
-                        Hardware maintenance and installation (5 years)
-                    </li>
-                    <li>
-                        Technical team lead and coordination (2 years)
-                    </li>
-                    <li>
-                        Developer, C# (2 months)
-                    </li>
-                </list>
-            </article>
-            <article id="education">
-                <h2>
-                    Education
-                </h2>
-                <list>
-                    <li>
-                        Electrotechnics electronics (5)
-                    </li>
-                    <li>
-                        Management and organization of informational systems (6.2)
-                    </li>
-                </list>
-            </article>
-            <article id="personal">
-                fdgjh
-            </article>
-            <article id="languages">
-                fdgh
-            </article>
-        </div>
-        <div id="right">
-            <article id="personal_data">
-                dfgh
-            </article>
-            <article id="languages">
-                dfgh
-            </article>
-        </div>
+        <article id="personal_details">
+            <h2>Personal details</h2>
+            <ul type="square">
+                Links:
+                <li>
+                    <a href="mailto:maroksmid333@gmail.com">
+                        E-mail</a>
+                </li>
+                <li>
+                    <a href="./Marko Šmid.pdf">C.V. in .pdf format</a>
+                </li>
+                <li>
+                    <a href="https://si.linkedin.com/in/markosmid">LinkedIn profile</a>
+                </li>
+                <li>
+                    <a href="http://github.com/randomizer333">Github repository</a>
+                </li>
+            </ul>
+        </article>
+        <article id="profile">
+            <h2>Profile</h2>
+            <p>
+                Enthusiastic programmer, a tech head, a self-taught full stack developer wishing to become a professional some day. Based on my experience I can learn a new concept or programming language. In my spare time I like to explore areas such as: quantum physics,
+                informational theory, astronomy, etc. My workflow is all about optimizing efficiency achieved with the use of the best tools mankind has produced such as: LEAN, GANTT, Waterfall, Kanban, Git ,etc.
+            </p>
+        </article>
+        <article id="programming_skils">
+            <h2>Programming skills</h2>
+            <label>JavaScript</label>
+            <progress value="77" max="100"></progress>
+            </br>
+            <label>Node.js</label>
+            <progress value="55" max="100"></progress>
+            </br>
+            <label>Git</label>
+            <progress value="55" max="100"></progress>
+            </br>
+            <label>SQL</label>
+            <progress value="77" max="100"></progress>
+            </br>
+            <label>Linux</label>
+            <progress value="66" max="100"></progress>
+            </br>
+            <label>HTML</label>
+            <progress value="44" max="100"></progress>
+            </br>
+            <label>CSS</label>
+            <progress value="33" max="100"></progress>
+            </br>
+            <label>C#</label>
+            <progress value="22" max="100"></progress>
+            </br>
+        </article>
+        <article id="experience">
+            <h2>
+                Experience
+            </h2>
+            <list>
+                <li>
+                    Hardware maintenance and installation (5 years)
+                </li>
+                <li>
+                    Technical team lead and coordination (2 years)
+                </li>
+                <li>
+                    Developer, C# (2 months)
+                </li>
+            </list>
+        </article>
+        <article id="education">
+            <h2>
+                Education
+            </h2>
+            <list>
+                <li>
+                    Electrotechnics electronics (5)
+                </li>
+                <li>
+                    Management and organization of informational systems (6.2)
+                </li>
+            </list>
+        </article>
+        <article id="strengths">
+            <h2>Strengths</h2>
+            <list>
+                <li>Team spirit</li>
+                <li>Engineers mindset</li>
+                <li>Perfectionist</li>
+                <li>Feel for detail</li>
+                <li>Team leader</li>
+                <li>Knowledgeable</li>
+                <li>Wide view on technology and data</li>
+                <li>Logical thinker</li>
+            </list>
+        </article>
+        <article id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>
+                    First language: Slovene
+                </li>
+                <li>
+                    Second language: English
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h2>Volunteering</h2>
+            <ul>
+                <li>
+                    E-Nota cultural musical society
+                </li>
+            </ul>
+        </article>
     </main>
 </body>
 <script src="http://unpkg.com/react@16.7.0/umd/react.production.min.js">
-
 </script>
 
 </html>
